@@ -95,6 +95,16 @@ namespace EasyFarm.ViewModels
             }
         }
 
+        public int ApproachDistance
+        {
+            get { return Config.Instance.ApproachDistance; }
+            set
+            {
+                Set(ref Config.Instance.ApproachDistance, value);
+                AppServices.InformUser("Approach Distance Set: {0}.", value);
+            }
+        }
+
         public bool AvoidObjects
         {
             get { return Config.Instance.IsObjectAvoidanceEnabled; }

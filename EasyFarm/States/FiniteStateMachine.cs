@@ -42,21 +42,21 @@ namespace EasyFarm.States
             _fface = fface;
             _context = new GameContext(fface);
 
-            AddState(new DeadState() { Priority = 7 });
-            AddState(new ZoneState() { Priority = 7 });
+            AddState(new DeadState() { Priority = 9 });
+            AddState(new ZoneState() { Priority = 9 });
             AddState(new SetTargetState() { Priority = 0 });
-            AddState(new SetFightingState() { Priority = 7 });
-            AddState(new FollowState() { Priority = 5 });
+            AddState(new SetFightingState() { Priority = 8 });
+            AddState(new FollowState() { Priority = 7 });
             AddState(new RestState() { Priority = 2 });
-            AddState(new SummonTrustsState() { Priority = 6 });
-            AddState(new ApproachState() { Priority = 0 });
-            AddState(new BattleState() { Priority = 3 });
+            AddState(new SummonTrustsState() { Priority = 3 });
+            AddState(new ApproachState() { Priority = 2 });
+            AddState(new BattleState() { Priority = 4 });
             AddState(new WeaponskillState() { Priority = 2 });
-            AddState(new PullState() { Priority = 4 });
+            AddState(new PullState() { Priority = 1 });
             AddState(new StartState() { Priority = 5 });
-            AddState(new TravelState() { Priority = 1 });
-            AddState(new HealingState() { Priority = 2 });
-            AddState(new EndState() { Priority = 3 });
+            AddState(new TravelState() { Priority = 3 });
+            AddState(new HealingState() { Priority = 3 });
+            AddState(new EndState() { Priority = 6 });
             AddState(new StartEngineState() { Priority = Constants.MaxPriority });
 
             _states.ForEach(x => x.Enabled = true);

@@ -65,6 +65,12 @@ namespace EasyFarm.UserSettings
         public int GlobalCooldown = Constants.GlobalSpellCooldown;
 
         /// <summary>
+        ///     How far a mob should be before approaching it.
+        /// </summary>
+        public int ApproachDistance = Constants.ApproachDistance;
+
+
+        /// <summary>
         ///     How high or low a player should detect a creature.
         /// </summary>
         public double HeightThreshold = Constants.HeightThreshold;

@@ -28,6 +28,7 @@ namespace EasyFarm.UserSettings
         bool ClaimedFilter { get; set; }
         double DetectionDistance { get; set; }
         int GlobalCooldown { get; set; }
+        int ApproachDistance { get; set; }
         double HeightThreshold { get; set; }
         int HighHealth { get; set; }
         int HighMagic { get; set; }

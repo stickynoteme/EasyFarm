@@ -55,6 +55,7 @@ namespace EasyFarm.States
         public override void Run(IGameContext context)
         {
             // Execute moves.
+            /// Maybe add this to wait for chest? TimeWaiter.Pause(300);
             var usable = context.Config.BattleLists["End"].Actions
                 .Where(x => ActionFilters.BuffingFilter(context.API, x));
 

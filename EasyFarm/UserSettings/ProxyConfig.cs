@@ -54,6 +54,11 @@ namespace EasyFarm.UserSettings
             get => Config.Instance.GlobalCooldown;
             set => Config.Instance.GlobalCooldown = value;
         }
+        public int ApproachDistance
+        {
+            get => Config.Instance.ApproachDistance;
+            set => Config.Instance.ApproachDistance = value;
+        }
         public double HeightThreshold
         {
             get => Config.Instance.HeightThreshold;

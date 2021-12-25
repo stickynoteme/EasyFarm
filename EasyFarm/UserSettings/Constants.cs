@@ -37,9 +37,16 @@ namespace EasyFarm.UserSettings
         public const int MeleeDistance = 2;
 
         /// <summary>
+        /// Min distance before appraching a mob.
+        /// </summary>
+        public const int ApproachDistance = 8;
+
+        /// <summary>
         /// Max difference an attackable mob can be before being considered unreachable.
         /// </summary>
         public const int HeightThreshold = 100;
+
+
 
         /// <summary>
         /// The max distance a mob will be recoginized by the bot.

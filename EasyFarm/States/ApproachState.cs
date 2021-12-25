@@ -51,7 +51,7 @@ namespace EasyFarm.States
             if (!usable.Any()) return true;
 
             // Approach mobs if their distance is close. 
-            return context.Target.Distance < 8;
+            return context.Target.Distance < context.Config.ApproachDistance;
         }
 
         public override void Run(IGameContext context)
